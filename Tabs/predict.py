@@ -48,16 +48,16 @@ def app(df, X, y):
         # Print the output according to the prediction
         if (prediction == 1):
             st.success("The person has low stress level 🙂")
-            st.write("Stress score =",prediction)
+            st.write("Stress score =",str(prediction[0]))
         elif (prediction == 2):
             st.warning("The person has medium stress level 😐")
-            st.write("Stress score =",prediction)
+            st.write("Stress score =",str(prediction[0]))
         elif (prediction == 3):
             st.error("The person has high stress level! 😞")
-            st.write("Stress score =",prediction)
+            st.write("Stress score =",str(prediction[0]))
         elif (prediction == 4):
             st.error("The person has very high stress level!! 😫")
-            st.write("Stress score =",prediction)
+            st.write("Stress score =",str(prediction[0]))
         else:
             st.success("The person is stress free and calm 😄")
 
